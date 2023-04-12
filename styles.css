@@ -1,6 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #404040;
+    margin: 0;
 }
 
 /* =================
@@ -8,40 +9,72 @@ body {
    ================= */
 
 h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 2px #816fca;
     font-weight: 400;
 }
 
-.beta-text { 
+h2 {
+    font-size: 2.25rem;
+    margin: 0.165em 0;
+}
+
+.main-content p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.beta-text {
     font-weight: 900;
 }
 
 .subheading {
     color: #575757;
+    margin-bottom: 0.5em;
     font-weight: 900;
 }
+
+.beta-text,
+.subheading {
+    text-transform: uppercase;
+}
+
+
+/* =================
+    Flex containers
+   ================= */
+
+   .intro,
+   .main-content {
+       display: flex;
+       flex-direction: column;
+   }
 
 /* =================
     Intro
    ================= */
 
-/* 
-  Challenge: Style the .intro section
-    - Convert into a flex container; 
-      display its content in a column
-    - Set a minimum height of 250px
-    - Center-align its content
-    - Vertically center the content
-    - Remove the space around the edges of the page
-*/
-
 .intro { 
     color: #fff;
     background-color: #9480e4;
+    min-height: 250px;
+    justify-content: center;
+    text-align: center;
 }
 
 /* ====================
     Main content
    ==================== */
+
+.main-content {
+    align-items: center;
+    padding: 2.5em 2em;
+}
+
+.img-main {
+    width: 120px;
+    border-radius: 50%;
+}
 
 
 /* =================
